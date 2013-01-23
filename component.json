@@ -9,13 +9,7 @@
   "dependencies": {
   },
   "scripts": [
-    "angular.js",
-    "angular-cookies.js",
-    "angular-loader.js",
-    "angular-mocks.js",
-    "angular-resource.js",
-    "angular-sanitize.js",
-    "angular-scenario.js"
+    "index.js"
   ],
   "repo": "https://raw.github.com/CamShaft/component-angular"
 }
