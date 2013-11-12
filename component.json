@@ -1,15 +1,17 @@
 {
   "name": "angular",
-  "version": "1.0.3",
+  "repo": "CamShaft/component-angular",
+  "version": "1.2.0",
   "description": "Component version of Angular.js",
   "homepage": "http://angularjs.org/",
   "keywords": [
     "angular"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "scripts": [
     "index.js"
   ],
-  "repo": "https://raw.github.com/CamShaft/component-angular"
+  "styles": [
+    "csp.css"
+  ]
 }
