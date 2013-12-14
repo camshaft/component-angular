@@ -1,6 +1,6 @@
 {
   "name": "angular",
-  "version": "1.0.3",
+  "version": "1.0.8",
   "description": "Component version of Angular.js",
   "homepage": "http://angularjs.org/",
   "keywords": [
@@ -10,6 +10,9 @@
   },
   "scripts": [
     "index.js"
+  ],
+  "styles": [
+    "csp.css"
   ],
   "repo": "https://raw.github.com/CamShaft/component-angular"
 }
