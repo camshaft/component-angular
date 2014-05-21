@@ -11735,9 +11735,21 @@ function isEmpty(value) {
 
 
 function textInputType(scope, element, attr, ctrl, $sniffer, $browser) {
-
+  var lastValue = element.val();
+  var lastPlaceholder = element[0].getAttribute("placholder");
   var listener = function() {
     var value = trim(element.val());
+    var currentPlaceholder = element[0].getAttribute("placeholder");
+
+    // This only fires on pageload.
+    if (msie && event && (event.type === 'input') &&
+        !value && (value === lastValue) &&
+        (currentPlaceholder !== lastPlaceholder)) {
+      lastPlaceholder = currentPlaceholder;
+      return;
+    }
+
+    lastValue = value;
 
     if (ctrl.$viewValue !== value) {
       scope.$apply(function() {
